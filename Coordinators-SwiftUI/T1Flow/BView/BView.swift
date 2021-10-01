@@ -15,9 +15,7 @@ import SwiftUI
 //}
 
 struct BView<T: BPresenterProtocol, VM: BViewModelProtocol>: View {
-    func tag() -> String {
-        String(describing: BView.self)
-    }
+
     @ObservedObject var presenter: T
     @ObservedObject var viewModel: VM
     
@@ -47,5 +45,9 @@ enum BFactory {
                                    onSelected: onSelected)
         let view = BView(presenter: presenter, viewModel: viewModel)
         return view
+    }
+    
+    static func tag() -> String {
+        String(describing: self)
     }
 }

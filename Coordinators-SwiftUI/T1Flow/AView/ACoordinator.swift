@@ -22,16 +22,17 @@ final class ACoordinator: ACoordinatorProtocol {
         @State private var topViewTag: String?
         var body: some View {
             return NavigationView {
-                Group {
+                VStack {
                     NavigationLink(destination:
                                    BCoordinator.BCoordinatorView(coordinator: BCoordinator()),
-                                   tag: "B",
+                                   tag: BPresenter.tag(),
                                    selection: $topViewTag) {
-                        AFactory.make(with: coordinator,
-                                      onSelected: {
-                            topViewTag = "B"
-                        })
+                        EmptyView()
                     }
+                    AFactory.make(with: coordinator,
+                                  onSelected: {
+                        topViewTag = BPresenter.tag()
+                    })
                 }
             }
         }

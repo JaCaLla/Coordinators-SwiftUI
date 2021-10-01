@@ -26,4 +26,8 @@ final class BPresenter: BPresenterProtocol {
     func onButtonPressed() {
         self.onSelected()
     }
+    
+    static func tag() -> String {
+       return String(describing: self)
+    }
 }

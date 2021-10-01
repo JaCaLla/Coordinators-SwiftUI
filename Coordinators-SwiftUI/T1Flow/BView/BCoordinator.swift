@@ -22,15 +22,15 @@ final class BCoordinator: BCoordinatorProtocol {
         @State private var topViewTag: String?
         var body: some View {
             return
-            Group {
-                NavigationLink(destination: CView(),
-                               tag: "C",
+            VStack {
+                NavigationLink(destination: CCoordinator.CCoordinatorView(coordinator: CCoordinator()),
+                               tag: CFactory.tag(),
                                selection: $topViewTag) {
-                    BFactory.make(with: coordinator,
-                                  onSelected: {
-                        topViewTag = "C"
-                    })
                 }
+                BFactory.make(with: coordinator,
+                              onSelected: {
+                    topViewTag = CFactory.tag()
+                })
             }
         }
     }

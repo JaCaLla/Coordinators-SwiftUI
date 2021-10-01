@@ -11,6 +11,12 @@
 		5E7A308A2707334100A1BA84 /* CPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7A30892707334100A1BA84 /* CPresenter.swift */; };
 		5E7A308C2707337A00A1BA84 /* CViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7A308B2707337A00A1BA84 /* CViewModel.swift */; };
 		5E7A308E27073DBF00A1BA84 /* BCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7A308D27073DBF00A1BA84 /* BCoordinator.swift */; };
+		5E7A30902707533400A1BA84 /* CCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7A308F2707533400A1BA84 /* CCoordinator.swift */; };
+		5E7A3092270757A300A1BA84 /* NavigationUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7A3091270757A300A1BA84 /* NavigationUtil.swift */; };
+		5E7A309727075ED500A1BA84 /* DView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7A309627075ED500A1BA84 /* DView.swift */; };
+		5E7A3099270761F500A1BA84 /* DCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7A3098270761F500A1BA84 /* DCoordinator.swift */; };
+		5E7A309B2707AC5900A1BA84 /* DViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7A309A2707AC5900A1BA84 /* DViewModel.swift */; };
+		5E7A309D2707ACCE00A1BA84 /* DPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7A309C2707ACCE00A1BA84 /* DPresenter.swift */; };
 		5E98E30C270079BF0051628A /* Coordinators_SwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E98E30B270079BF0051628A /* Coordinators_SwiftUIApp.swift */; };
 		5E98E310270079C30051628A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E98E30F270079C30051628A /* Assets.xcassets */; };
 		5E98E313270079C30051628A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E98E312270079C30051628A /* Preview Assets.xcassets */; };
@@ -30,6 +36,12 @@
 		5E7A30892707334100A1BA84 /* CPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPresenter.swift; sourceTree = "<group>"; };
 		5E7A308B2707337A00A1BA84 /* CViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CViewModel.swift; sourceTree = "<group>"; };
 		5E7A308D27073DBF00A1BA84 /* BCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BCoordinator.swift; sourceTree = "<group>"; };
+		5E7A308F2707533400A1BA84 /* CCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCoordinator.swift; sourceTree = "<group>"; };
+		5E7A3091270757A300A1BA84 /* NavigationUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationUtil.swift; sourceTree = "<group>"; };
+		5E7A309627075ED500A1BA84 /* DView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DView.swift; sourceTree = "<group>"; };
+		5E7A3098270761F500A1BA84 /* DCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DCoordinator.swift; sourceTree = "<group>"; };
+		5E7A309A2707AC5900A1BA84 /* DViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DViewModel.swift; sourceTree = "<group>"; };
+		5E7A309C2707ACCE00A1BA84 /* DPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DPresenter.swift; sourceTree = "<group>"; };
 		5E98E308270079BF0051628A /* Coordinators-SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Coordinators-SwiftUI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E98E30B270079BF0051628A /* Coordinators_SwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinators_SwiftUIApp.swift; sourceTree = "<group>"; };
 		5E98E30F270079C30051628A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -62,8 +74,20 @@
 				5E7A30872707330300A1BA84 /* CView.swift */,
 				5E7A30892707334100A1BA84 /* CPresenter.swift */,
 				5E7A308B2707337A00A1BA84 /* CViewModel.swift */,
+				5E7A308F2707533400A1BA84 /* CCoordinator.swift */,
 			);
 			path = CView;
+			sourceTree = "<group>";
+		};
+		5E7A309527075BDB00A1BA84 /* DView */ = {
+			isa = PBXGroup;
+			children = (
+				5E7A309627075ED500A1BA84 /* DView.swift */,
+				5E7A309A2707AC5900A1BA84 /* DViewModel.swift */,
+				5E7A309C2707ACCE00A1BA84 /* DPresenter.swift */,
+				5E7A3098270761F500A1BA84 /* DCoordinator.swift */,
+			);
+			path = DView;
 			sourceTree = "<group>";
 		};
 		5E98E2FF270079BE0051628A = {
@@ -106,6 +130,7 @@
 		5E98E31927007E2B0051628A /* T1Flow */ = {
 			isa = PBXGroup;
 			children = (
+				5E7A309527075BDB00A1BA84 /* DView */,
 				5E7A30852707328600A1BA84 /* CView */,
 				5E98E3272701B6700051628A /* BView */,
 				5E98E31F27007EF40051628A /* AView */,
@@ -139,6 +164,7 @@
 			isa = PBXGroup;
 			children = (
 				5ED2E25C2704EB320079836C /* Coordinator.swift */,
+				5E7A3091270757A300A1BA84 /* NavigationUtil.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -218,15 +244,21 @@
 				5E7A30882707330300A1BA84 /* CView.swift in Sources */,
 				5ED2E25D2704EB320079836C /* Coordinator.swift in Sources */,
 				5ED2E25827037EBD0079836C /* BPresenter.swift in Sources */,
+				5E7A309727075ED500A1BA84 /* DView.swift in Sources */,
 				5ED2E25A27037F930079836C /* BViewModel.swift in Sources */,
+				5E7A309D2707ACCE00A1BA84 /* DPresenter.swift in Sources */,
+				5E7A30902707533400A1BA84 /* CCoordinator.swift in Sources */,
 				5E7A308A2707334100A1BA84 /* CPresenter.swift in Sources */,
 				5E98E3292701B6850051628A /* BView.swift in Sources */,
 				5E7A308C2707337A00A1BA84 /* CViewModel.swift in Sources */,
 				5E98E31C27007E600051628A /* AView.swift in Sources */,
+				5E7A309B2707AC5900A1BA84 /* DViewModel.swift in Sources */,
 				5E98E32127007FCC0051628A /* APresenter.swift in Sources */,
 				5E98E32627008CFB0051628A /* ACoordinator.swift in Sources */,
+				5E7A3092270757A300A1BA84 /* NavigationUtil.swift in Sources */,
 				5E98E30C270079BF0051628A /* Coordinators_SwiftUIApp.swift in Sources */,
 				5E7A308E27073DBF00A1BA84 /* BCoordinator.swift in Sources */,
+				5E7A3099270761F500A1BA84 /* DCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

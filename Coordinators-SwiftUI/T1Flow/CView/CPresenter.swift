@@ -11,19 +11,27 @@ import SwiftUI
 protocol CPresenterProtocol: ObservableObject {
     var viewModel: CViewModel { get }
     func onButtonPressed()
+    func onNextView()
 }
 
 final class CPresenter: CPresenterProtocol {
     @ObservedObject var viewModel: CViewModel
-    var onSelected: () -> Void = { }
+    var onPopToRoot: () -> Void = { }
+    var onPresentD: () -> Void = { }
     
     init(viewModel: CViewModel,
-         onSelected: @escaping () -> Void) {
+         onPopToRoot: @escaping () -> Void,
+         onPresentD: @escaping () -> Void) {
         self.viewModel = viewModel
-        self.onSelected = onSelected
+        self.onPopToRoot = onPopToRoot
+        self.onPresentD = onPresentD
     }
     
     func onButtonPressed() {
-        self.onSelected()
+        self.onPopToRoot()
+    }
+    
+    func onNextView() {
+        self.onPresentD()
     }
 }
