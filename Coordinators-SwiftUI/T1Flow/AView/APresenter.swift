@@ -27,4 +27,8 @@ final class APresenter: APresenterProtocol {
     func onButtonPressed() {
         self.onSelected()
     }
+    
+    static func tag() -> String {
+       return String(describing: self)
+    }
 }

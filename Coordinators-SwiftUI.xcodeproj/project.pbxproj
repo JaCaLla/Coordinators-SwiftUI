@@ -17,6 +17,11 @@
 		5E7A3099270761F500A1BA84 /* DCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7A3098270761F500A1BA84 /* DCoordinator.swift */; };
 		5E7A309B2707AC5900A1BA84 /* DViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7A309A2707AC5900A1BA84 /* DViewModel.swift */; };
 		5E7A309D2707ACCE00A1BA84 /* DPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7A309C2707ACCE00A1BA84 /* DPresenter.swift */; };
+		5E7A30C2270B5E4500A1BA84 /* ECoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7A30C1270B5E4500A1BA84 /* ECoordinator.swift */; };
+		5E7A30C4270B5EFF00A1BA84 /* EView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7A30C3270B5EFF00A1BA84 /* EView.swift */; };
+		5E7A30C6270B5F4300A1BA84 /* EPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7A30C5270B5F4300A1BA84 /* EPresenter.swift */; };
+		5E7A30C8270B5F7B00A1BA84 /* EViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7A30C7270B5F7B00A1BA84 /* EViewModel.swift */; };
+		5E7A30CA270B612900A1BA84 /* EDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7A30C9270B612900A1BA84 /* EDetailView.swift */; };
 		5E98E30C270079BF0051628A /* Coordinators_SwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E98E30B270079BF0051628A /* Coordinators_SwiftUIApp.swift */; };
 		5E98E310270079C30051628A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E98E30F270079C30051628A /* Assets.xcassets */; };
 		5E98E313270079C30051628A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E98E312270079C30051628A /* Preview Assets.xcassets */; };
@@ -42,6 +47,11 @@
 		5E7A3098270761F500A1BA84 /* DCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DCoordinator.swift; sourceTree = "<group>"; };
 		5E7A309A2707AC5900A1BA84 /* DViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DViewModel.swift; sourceTree = "<group>"; };
 		5E7A309C2707ACCE00A1BA84 /* DPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DPresenter.swift; sourceTree = "<group>"; };
+		5E7A30C1270B5E4500A1BA84 /* ECoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ECoordinator.swift; sourceTree = "<group>"; };
+		5E7A30C3270B5EFF00A1BA84 /* EView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EView.swift; sourceTree = "<group>"; };
+		5E7A30C5270B5F4300A1BA84 /* EPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EPresenter.swift; sourceTree = "<group>"; };
+		5E7A30C7270B5F7B00A1BA84 /* EViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EViewModel.swift; sourceTree = "<group>"; };
+		5E7A30C9270B612900A1BA84 /* EDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EDetailView.swift; sourceTree = "<group>"; };
 		5E98E308270079BF0051628A /* Coordinators-SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Coordinators-SwiftUI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E98E30B270079BF0051628A /* Coordinators_SwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinators_SwiftUIApp.swift; sourceTree = "<group>"; };
 		5E98E30F270079C30051628A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -90,6 +100,34 @@
 			path = DView;
 			sourceTree = "<group>";
 		};
+		5E7A30C0270B5E1B00A1BA84 /* T2Flow */ = {
+			isa = PBXGroup;
+			children = (
+				5E7A30CD270B620500A1BA84 /* EDetailView */,
+				5E7A30CB270B61E300A1BA84 /* EView */,
+			);
+			path = T2Flow;
+			sourceTree = "<group>";
+		};
+		5E7A30CB270B61E300A1BA84 /* EView */ = {
+			isa = PBXGroup;
+			children = (
+				5E7A30C1270B5E4500A1BA84 /* ECoordinator.swift */,
+				5E7A30C3270B5EFF00A1BA84 /* EView.swift */,
+				5E7A30C5270B5F4300A1BA84 /* EPresenter.swift */,
+				5E7A30C7270B5F7B00A1BA84 /* EViewModel.swift */,
+			);
+			path = EView;
+			sourceTree = "<group>";
+		};
+		5E7A30CD270B620500A1BA84 /* EDetailView */ = {
+			isa = PBXGroup;
+			children = (
+				5E7A30C9270B612900A1BA84 /* EDetailView.swift */,
+			);
+			path = EDetailView;
+			sourceTree = "<group>";
+		};
 		5E98E2FF270079BE0051628A = {
 			isa = PBXGroup;
 			children = (
@@ -111,6 +149,7 @@
 			children = (
 				5ED2E25B2704EB1D0079836C /* Base */,
 				5E98E31927007E2B0051628A /* T1Flow */,
+				5E7A30C0270B5E1B00A1BA84 /* T2Flow */,
 				5E98E30B270079BF0051628A /* Coordinators_SwiftUIApp.swift */,
 				5E98E32F270221E90051628A /* AppCoordinator.swift */,
 				5E98E30F270079C30051628A /* Assets.xcassets */,
@@ -240,6 +279,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5E98E31E27007EB70051628A /* AViewModel.swift in Sources */,
+				5E7A30C6270B5F4300A1BA84 /* EPresenter.swift in Sources */,
 				5E98E330270221E90051628A /* AppCoordinator.swift in Sources */,
 				5E7A30882707330300A1BA84 /* CView.swift in Sources */,
 				5ED2E25D2704EB320079836C /* Coordinator.swift in Sources */,
@@ -253,9 +293,13 @@
 				5E7A308C2707337A00A1BA84 /* CViewModel.swift in Sources */,
 				5E98E31C27007E600051628A /* AView.swift in Sources */,
 				5E7A309B2707AC5900A1BA84 /* DViewModel.swift in Sources */,
+				5E7A30C4270B5EFF00A1BA84 /* EView.swift in Sources */,
 				5E98E32127007FCC0051628A /* APresenter.swift in Sources */,
 				5E98E32627008CFB0051628A /* ACoordinator.swift in Sources */,
+				5E7A30C2270B5E4500A1BA84 /* ECoordinator.swift in Sources */,
 				5E7A3092270757A300A1BA84 /* NavigationUtil.swift in Sources */,
+				5E7A30C8270B5F7B00A1BA84 /* EViewModel.swift in Sources */,
+				5E7A30CA270B612900A1BA84 /* EDetailView.swift in Sources */,
 				5E98E30C270079BF0051628A /* Coordinators_SwiftUIApp.swift in Sources */,
 				5E7A308E27073DBF00A1BA84 /* BCoordinator.swift in Sources */,
 				5E7A3099270761F500A1BA84 /* DCoordinator.swift in Sources */,

@@ -13,7 +13,7 @@ struct CView<T: CPresenterProtocol, VM: CViewModelProtocol>: View {
     }
     @ObservedObject var presenter: T
     @ObservedObject var viewModel: VM
-    
+    @Environment(\.currentTab) var tab
     var body: some View {
         VStack {
             Text(viewModel.runCountStr).font(.system(size: 200))
@@ -26,6 +26,11 @@ struct CView<T: CPresenterProtocol, VM: CViewModelProtocol>: View {
                 self.presenter.onButtonPressed()
             } label: {
                 Text("Pop to root")
+            }.padding()
+            Button {
+                tab.wrappedValue = .branch
+            } label: {
+                Text("Switch to Branch tab")
             }.padding()
         }.navigationTitle("C Navigation bar")
     }
